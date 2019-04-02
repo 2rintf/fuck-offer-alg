@@ -1,5 +1,8 @@
+#pragma warning(disable:4996)
 #include <stdlib.h>
 #include <iostream>
+
+#include <string>
 
 using namespace std;
 
@@ -59,20 +62,52 @@ public:
 	}
 };
 
+class Solution2 {
+public:
+	void replaceSpace(char *str, int length) {
+		string s(str);
+		int i = 0;
+		while ((i = s.find(' ', i)) > -1) {
+			s.erase(i, 1);
+			s.insert(i, "%20");
+
+		}
+		auto ret = s.c_str();
+		strcpy(str, ret);
+	}
+};
+
 int main()
 {
-	char str[] = "We Are Happy.";
-	char help[14] = " helloworld";
+	char str[30] = "We Are Happy.";
+	char help[30] = "helloworld";
 
-	Solution s;
-	s.replaceSpace(help, 14);
+	int i;
+
+	std::string x = "posts & telecom press";
+	cout << x.max_size() << endl;
+	cout << (int)(string::basic_string::npos)<< endl;
+	cout << x.find('t', 4) << endl;
+
+	// find --> 返回第一个匹配到的字符的位置
+
+	//Solution s;
+	//s.replaceSpace(help, 30);
+
+	Solution2 s2;
+	s2.replaceSpace(help, 30);
 	
 
 	for (auto i : help)
 	{
 		cout << i;
 	}
+	cout << endl;
 
+	for (auto i : str)
+	{
+		cout << i;
+	}
 
 
 	system("pause");

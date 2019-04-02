@@ -73,7 +73,46 @@ public:
 	}
 };
 ```
-②使用标准库`std::string`的特性  
-```C
+②使用标准库`<string>`的特性。[[代码参考]：free2ing的回复](https://www.nowcoder.com/questionTerminal/4060ac7e3e404ad1a894ef3e17650423)  
+- `std::basic_string::find`  
+四个重载。第一个input一般是指搜索的字符或字符串，第二个input指的是指针偏移量pos，即`find`从pos位置开始搜索字符。output是第一个搜索到的字符的位置，若无匹配，则返回`string::basic_string::npos`（此值强制转换为`int`后为**-1**）。
 
+
+	|  类型   |     |
+	| --- | --- |
+	|  string   |  size_type find (const basic_string& str, size_type pos = 0) const noexcept;   |
+	|  c-string   |  size_type find (const charT* s, size_type pos = 0) const;   |
+	|  buffer   |  size_type find (const charT* s, size_type pos, size_type n) const;   |
+	|  char   |  size_type find (charT c, size_type pos = 0) const noexcept;   |  
+- `std::basic_string::erase`  
+第一个input是位置pos，第二个input是删除字符个数len。或者是直接给开头first和结尾last，在`[first,last)`  此范围内删除。
+
+	|  类型   |     |
+	| --- | --- |
+	|  sequence   |  basic_string& erase (size_type pos = 0, size_type len = npos);   |
+	|  char   |  iterator erase (const_iterator p);   |
+	|  range   | iterator erase (const_iterator first, const_iterator last);   |
+	
+- `std::basic_string::insert`   
+对于string，第一个input是插入位置pos，第二个input是插入的字符or字符串。还有一个substring的重载可以指定某字符串的其中一部分插入到欲插入字符串。  
+
+	|  类型   |     |
+	| --- | --- |
+	|  string   |  basic_string& insert (size_type pos, const basic_string& str);  |
+	|  substring   |  basic_string& insert (size_type pos, const basic_string& str,size_type subpos, size_type sublen);   |
+
+```C
+class Solution2 {
+public:
+	void replaceSpace(char *str, int length) {
+		string s(str);// char数组指针转string
+		int i = 0;
+		while ((i = s.find(' ', i)) > -1) {
+			s.erase(i, 1);
+			s.insert(i, "%20");
+		}
+		auto ret = s.c_str();
+		strcpy(str, ret);
+	}
+};
 ```
