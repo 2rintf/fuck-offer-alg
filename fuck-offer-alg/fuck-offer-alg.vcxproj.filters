@@ -18,7 +18,7 @@
     <ClCompile Include="3_PrintLinkedListReverse\PrintLinkedListReverse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="List.cpp">
+    <ClCompile Include="3_PrintLinkedListReverse\List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

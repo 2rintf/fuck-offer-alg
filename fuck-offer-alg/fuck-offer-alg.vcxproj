@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="3_PrintLinkedListReverse\List.cpp" />
     <ClCompile Include="3_PrintLinkedListReverse\PrintLinkedListReverse.cpp" />
-    <ClCompile Include="List.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="List.h" />
