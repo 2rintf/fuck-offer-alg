@@ -15,7 +15,7 @@
 思考:  
 1. I hate linked list.  
 2. 第一想法是把所有链表节点的next指针反置一遍。  
-3. 这个题其实改为返回ListNode会好一点（或者直接输出）。返回vector，有些答案就直接在vector上操作，可能没有达到考察链表知识点的目的。leetcode上[这道题目](https://leetcode.com/problems/reverse-linked-list/)就好一点。故下面的代码均以`返回ListNode`为解答。
+3. ~~这个题其实改为返回ListNode会好一点。返回vector，有些答案就直接在vector上操作，可能没有达到考察链表知识点的目的。~~ （原来后面还有一道题就是`反转链表`，嘻嘻嘻。）leetcode上[这道题目](https://leetcode.com/problems/reverse-linked-list/)就好一点。故下面的代码均以`返回ListNode`为解答。
 
 ---  
 代码(其中耗时与内存均基于leetcode在线返回的结果)：  
