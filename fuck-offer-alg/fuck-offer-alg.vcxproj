@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3_PrintLinkedListReverse\List.cpp" />
-    <ClCompile Include="3_PrintLinkedListReverse\PrintLinkedListReverse.cpp" />
+    <ClCompile Include="4_TwoStacksForQueue\CircularQueue.cpp" />
+    <ClCompile Include="4_TwoStacksForQueue\TwoStacksForQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="List.h" />
+    <ClInclude Include="4_TwoStacksForQueue\CircularQueue.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

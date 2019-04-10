@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3_PrintLinkedListReverse\PrintLinkedListReverse.cpp">
+    <ClCompile Include="4_TwoStacksForQueue\TwoStacksForQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="3_PrintLinkedListReverse\List.cpp">
+    <ClCompile Include="4_TwoStacksForQueue\CircularQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="List.h">
+    <ClInclude Include="4_TwoStacksForQueue\CircularQueue.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
