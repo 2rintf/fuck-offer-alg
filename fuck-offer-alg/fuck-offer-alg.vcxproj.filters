@@ -21,6 +21,9 @@
     <ClCompile Include="4_TwoStacksForQueue\CircularQueue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="4_TwoStacksForQueue\CircularQueueTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4_TwoStacksForQueue\CircularQueue.hpp">

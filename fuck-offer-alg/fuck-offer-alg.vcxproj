@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="4_TwoStacksForQueue\CircularQueue.cpp" />
+    <ClCompile Include="4_TwoStacksForQueue\CircularQueueTest.cpp" />
     <ClCompile Include="4_TwoStacksForQueue\TwoStacksForQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
