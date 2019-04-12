@@ -37,7 +37,7 @@ public:
 	// 清空队列
 	void clearQueue(queue *PQueue);
 	// 判断队列是否为空
-	bool isEmpityQueue(queue *PQueue);
+	bool isEmptyQueue(queue *PQueue);
 	// 判断队列是否为满
 	bool isFullQueue(queue *PQueue);
 	// 获得队列长度

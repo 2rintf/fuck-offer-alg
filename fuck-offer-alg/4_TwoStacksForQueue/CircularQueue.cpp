@@ -40,7 +40,7 @@ void CircularQueue::clearQueue(queue * PQueue)
 	PQueue->rear = 0;
 }
 
-bool CircularQueue::isEmpityQueue(queue * PQueue)
+bool CircularQueue::isEmptyQueue(queue * PQueue)
 {
 	if (PQueue->front == PQueue->rear)
 	{
@@ -88,7 +88,7 @@ bool CircularQueue::enQueue(queue * PQueue, ElemType element)
 
 bool CircularQueue::deQueue(queue * PQueue, ElemType * pElement)
 {
-	if (isEmpityQueue(PQueue))
+	if (isEmptyQueue(PQueue))
 	{
 		cout << "can not deQueue." << endl << endl;
 		return false;

@@ -21,10 +21,12 @@
   <ItemGroup>
     <ClCompile Include="4_TwoStacksForQueue\CircularQueue.cpp" />
     <ClCompile Include="4_TwoStacksForQueue\CircularQueueTest.cpp" />
+    <ClCompile Include="4_TwoStacksForQueue\LinkQueue.cpp" />
     <ClCompile Include="4_TwoStacksForQueue\TwoStacksForQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4_TwoStacksForQueue\CircularQueue.hpp" />
+    <ClInclude Include="4_TwoStacksForQueue\LinkQueue.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
