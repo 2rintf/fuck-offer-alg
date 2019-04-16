@@ -24,8 +24,8 @@ typedef struct {
 class LinkQueue {
 
 public:
-	LinkQueue();
-	~LinkQueue();
+	LinkQueue() {};
+	~LinkQueue() {};
 
 	// 初始化队列
 	bool initQueue(queue* q);
